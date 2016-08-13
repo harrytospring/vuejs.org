@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Server-Side Rendering - vue.js</title>
+        <title>服务端渲染 - vue.js</title>
         <meta charset="utf-8">
         <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -314,7 +314,7 @@
                 
                 
                 <li>
-                    <a href="/guide/ssr.html" class="sidebar-link current">Server-Side Rendering</a>
+                    <a href="/guide/ssr.html" class="sidebar-link current">服务端渲染</a>
                 </li>
             
                 
@@ -350,11 +350,11 @@
   </a>
 </div>
 
-    <h1>Server-Side Rendering</h1>
-    <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>Server-side rendering (i.e. SSR) sounds complex, but a simple node script demoing the feature requires only 3 steps:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Step 1: Create a Vue instance</span></div><div class="line"><span class="keyword">var</span> Vue = <span class="built_in">require</span>(<span class="string">'vue'</span>)</div><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params">h</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> h(<span class="string">'p'</span>, <span class="string">'hello world'</span>)</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// Step 2: Create a renderer</span></div><div class="line"><span class="keyword">var</span> renderer = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>).createRenderer()</div><div class="line"></div><div class="line"><span class="comment">// Step 3: Render the Vue instance to HTML</span></div><div class="line">renderer.renderToString(vm, <span class="function"><span class="keyword">function</span> (<span class="params">error, html</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (error) <span class="keyword">throw</span> error</div><div class="line">  <span class="built_in">console</span>.log(html)</div><div class="line">  <span class="comment">// =&gt; &lt;p server-rendered="true"&gt;hello world&lt;/p&gt;</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>Not so scary, right? In the rest of this guide, we’ll give you a broad overview of how SSR works with the most common use cases. Once you understand the basics, we’ll share some more detailed documentation and advanced examples to help you handle any edge cases.</p>
-<h2 id="TODO-Finish-this-guide"><a href="#TODO-Finish-this-guide" class="headerlink" title="!!TODO: Finish this guide"></a>!!TODO: Finish this guide</h2>
+    <h1>服务端渲染</h1>
+    <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>服务端渲染(即SSR)听起来很复杂, 不过一个简单的Node脚本只需要3步就可以实现这个功能:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="comment">// 步骤 1:创建一个Vue实例</span></div><div class="line"><span class="keyword">var</span> Vue = <span class="built_in">require</span>(<span class="string">'vue'</span>)</div><div class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</div><div class="line">  render: <span class="function"><span class="keyword">function</span>(<span class="params">h</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> h(<span class="string">'p'</span>, <span class="string">'hello world'</span>)</div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// 步骤 2: 创建一个渲染器</span></div><div class="line"><span class="keyword">var</span> renderer = <span class="built_in">require</span>(<span class="string">'vue-server-renderer'</span>).createRenderer()</div><div class="line"></div><div class="line"><span class="comment">// 步骤 3: 将 Vue实例 渲染成 HTML</span></div><div class="line">renderer.renderToString(vm, <span class="function"><span class="keyword">function</span> (<span class="params">error, html</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (error) <span class="keyword">throw</span> error</div><div class="line">  <span class="built_in">console</span>.log(html)</div><div class="line">  <span class="comment">// =&gt; &lt;p server-rendered="true"&gt;hello world&lt;/p&gt;</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>没那么吓人，是不？在这个教程的其余部分，我们将通过最常见的示例来向你阐述服务端渲染的工作方式。一旦你理解了基础，我们将分享更多细节文档和进阶示例来帮助你处理意外情况。</p>
+<h2 id="待更…"><a href="#待更…" class="headerlink" title="待更…"></a>待更…</h2>
     
       <div class="guide-links">
         
