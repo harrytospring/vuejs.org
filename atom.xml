@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Vue.js</title>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/vuejs.org/atom.xml" rel="self"/>
   
   <link href="http://vuejs.org/"/>
   <updated>2016-08-13T12:58:14.000Z</updated>
